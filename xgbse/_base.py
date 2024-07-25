@@ -29,6 +29,8 @@ class XGBSEBaseEstimator(BaseEstimator):
         self.index_id = None
         self.tree = None
 
+        self.enable_categorical = enable_categorical
+
     def fit_feature_extractor(
         self,
         X,

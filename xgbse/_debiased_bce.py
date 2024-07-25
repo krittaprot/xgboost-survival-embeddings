@@ -109,6 +109,7 @@ class XGBSEDebiasedBCE(XGBSEBaseEstimator):
         super().__init__(xgb_params=xgb_params, enable_categorical=enable_categorical)
         self.lr_params = lr_params
         self.n_jobs = n_jobs
+        self.enable_categorical = enable_categorical
 
     def fit(
         self,

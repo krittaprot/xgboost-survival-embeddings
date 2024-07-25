@@ -62,6 +62,9 @@ class XGBSEStackedWeibull(XGBSEBaseEstimator):
         self.persist_train = False
         self.feature_importances_ = None
 
+        self.enable_categorical = enable_categorical
+
+
     def fit(
         self,
         X,

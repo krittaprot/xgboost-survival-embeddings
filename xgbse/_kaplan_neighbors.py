@@ -291,6 +291,8 @@ class XGBSEKaplanTree(XGBSEBaseEstimator):
 
         super().__init__(xgb_params=xgb_params, enable_categorical=enable_categorical)
         self.index_id = None
+        self.enable_categorical = enable_categorical
+
 
     def fit(
         self,
